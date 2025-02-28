@@ -209,52 +209,31 @@ $(document).ready(function () {
 
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
-        e.preventDefault(); // Prevent normal form submission
-    
-        // Serialize the form data for a POST request
+        e.preventDefault();
         var data = $(this).serialize();
-    
-        // Show a loading/info message
-        $('#alert-wrapper').html(
-        alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.')
-        );
-    
-        // Optional: client-side check of invite code via MD5
-        // (Remove if you prefer to let the server handle all validation)
-        if (
-        MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40' &&
-        MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc'
-        ) {
-        // Show an error if the invite code hash doesn't match your known hashes
-        $('#alert-wrapper').html(
-            alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.')
-        );
+
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+
+        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
+            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-        // 1) Grab the form's action URL from index.html
-        var formActionUrl = $('#rsvp-form').attr('action');
-    
-        // 2) Send an AJAX POST to that URL
-        $.post(formActionUrl, data)
-            .done(function (response) {
-            console.log(response);
-            if (response.result === 'error') {
-                // If the server returns result: "error"
-                $('#alert-wrapper').html(alert_markup('danger', response.message));
-            } else {
-                // Success: clear messages and open RSVP modal
-                $('#alert-wrapper').html('');
-                $('#rsvp-modal').modal('show');
-            }
-            })
-            .fail(function (error) {
-            console.log(error);
-            $('#alert-wrapper').html(
-                alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server.')
-            );
-            });
+            $.post('https://script.google.com/macros/s/AKfycbyIMTgnp-haxcvLW9vEbjk9nYUpiNONI2I3nSr2tPJcnB1YbSm0nwvM5O1Hn5pWnIIo/exec', data)
+                .done(function (data) {
+                    console.log(data);
+                    if (data.result === "error") {
+                        $('#alert-wrapper').html(alert_markup('danger', data.message));
+                    } else {
+                        $('#alert-wrapper').html('');
+                        $('#rsvp-modal').modal('show');
+                    }
+                })
+                .fail(function (data) {
+                    console.log(data);
+                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                });
         }
     });
-  
 
 });
 
