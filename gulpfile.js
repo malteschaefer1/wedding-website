@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var replace = require('gulp-replace');
 require('dotenv').config(); // Loads variables from .env
+console.log('Loaded API key:', process.env.GOOGLE_MAPS_API_KEY); // Log API key
 
 // Compile SCSS to CSS
 gulp.task('sass', function () {

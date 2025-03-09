@@ -28,6 +28,11 @@
         padding-top: 50%;
     }
 
+    #eng-pics .row { display: flex; flex-wrap: wrap; }
+    #eng-pics .col-4 { flex: 0 0 50%; max-width: 50%; }
+    #eng-pics .img-wrap { border: 10px solid #fff; }
+    #eng-pics .img-wrap i { font-size: 25px; position: absolute; width: 25px; height: 25px; top: 10px; right: 10px; }
+
     .header-nav {
         position: fixed;
         background-color: #000;
@@ -236,11 +241,11 @@
     
     #map-content {
         margin-top: 0;
-        padding: 35px;
+        padding: 80px;
     }
 
     .rsvp {
-        padding-top: 40px;
+        padding-top: 80px;
     }
 
     footer .social-share {
@@ -257,22 +262,19 @@
         padding-top: 100%;
     }
 
-    #eng-pics .img-wrap i {
-        font-size: 25px;
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        top: 10px;
-        right: 10px; }
-
+    #eng-pics .row { display: flex; flex-wrap: wrap; }
+    #eng-pics .col-4 { flex: 0 0 50%; max-width: 50%; }
+    #eng-pics .img-wrap { border: 10px solid #fff; }
+    #eng-pics .img-wrap i { font-size: 25px; position: absolute; width: 25px; height: 25px; top: 10px; right: 10px; }
+    
     #map-content-wrapper {
-        margin-bottom: 0;
+        margin-bottom: 40;
     }
     
     footer ul.footer-group {
         border-top: none;
     }
-
+    
     footer ul.footer-group li a {
         font-size: 13px;
         text-transform: uppercase;
@@ -280,15 +282,14 @@
         display: block;
         border-bottom: dashed 1px #4E566C;
     }
-
+    
     footer ul.footer-group li {
         display: block;
     }
-
+    
     footer .footer-links {
         margin: 50px 0 50px 0;
     }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -313,6 +314,11 @@
     .hero h1 {
         font-size: 50px;
     }
+
+    #eng-pics .row { display: flex; flex-wrap: wrap; }
+    #eng-pics .col-4 { flex: 0 0 50%; max-width: 50%; }
+    #eng-pics .img-wrap { border: 10px solid #fff; }
+    #eng-pics .img-wrap i { font-size: 25px; position: absolute; width: 25px; height: 25px; top: 10px; right: 10px; }
 
     .btn-margin-right {
         margin-right: 0px;
@@ -360,7 +366,12 @@
         padding-top: 130%;
     }
 
+    #eng-pics .row { display: flex; flex-wrap: wrap; }
+    #eng-pics .col-4 { flex: 0 0 50%; max-width: 50%; }
+    #eng-pics .img-wrap { border: 10px solid #fff; }
+    #eng-pics .img-wrap i { font-size: 25px; position: absolute; width: 25px; height: 25px; top: 10px; right: 10px; }
+
     .rsvp {
-        padding-top: 20px;
+        padding-top: 80px;
     }
 }
