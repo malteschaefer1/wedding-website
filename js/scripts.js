@@ -212,7 +212,7 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Sekunde!</strong> Wird gespeichert.'));
 
         if (MD5($('#invite_code').val()) !== '61276a1f907e447e357cc0fadc861703') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Mist!</strong> Es sieht so aus als wäre das der falsche Einladungscode.'));
