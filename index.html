@@ -175,53 +175,43 @@
           <h3 class="header">Das Fest</h3>
         </div>
       </div>
-      <!-- Temporary Placeholder: Displaying only a simple info message -->
       <div class="row">
-        <div class="col-md-12 text-center">
-          <p>Nähere Informationen folgen.</p>
+        <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
+          <h4>31. Juli – Ankommen & Warm-up</h4>
+          <ul class="list-unstyled event-list text-center">
+            <li><strong>ca. 20h</strong> · Get-together</li>
+            <li>(Location wird noch bekannt gegeben)</li>
+          </ul>
+          <div class="section-border section-padding"></div>
+
+          <h4>1. August – Der große Tag</h4>
+          <ul class="list-unstyled event-list text-center">
+            <li><strong>15h</strong> · Empfang mit feinen Getränken</li>
+            <li><strong>15:30h</strong> · Kaffee & Kuchen</li>
+            <li><strong>18h</strong> · Abendessen</li>
+            <li><strong>ab 20h</strong> · Party 🎉</li>
+            <li>Location: Café Simonz, Wuppertal (siehe unten)</li>
+          </ul>
+
+          <div class="section-padding"></div>
+            <h5>Programmpunkte</h5>
+          Ihr möchtet einen Programmpunkt beisteuern?<br>
+          Meldet euch gerne vorher bei Maltes Schwester Amrei:<br>
+          <a href="mailto:lasunnye@gmx.de" aria-label="Email an Amrei">📨 Email schreiben</a><br>
+          📱 +49 162 4633637
+
+          <div class="section-padding"></div>
+            <h5>Kinder</h5>
+          Für alle, die mit Kindern anreisen:<br>
+          Es wird vor Ort eine extra Küche geben, die zur Zubereitung von Speisen, zum Milch erwärmen etc. genutzt werden kann.
+          Weiterhin gibt es einen Innenhof mit Spielplatz und viel Platz zum Toben.
+
+          <div class="section-padding"></div>
+            <h5>Parken</h5>
+          Es gibt eine sehr begrenzte Anzahl an Parkplätzen direkt an der Location.<br>
+          Wir empfehlen daher am Hotel zu parken und zu Fuß zu kommen.
+
         </div>
-      </div>
-      <!-- <div class="row">
-        <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-          <div class="wp3">
-            <p><strong>25. Juli (Freitag)</strong></p>
-            <h5>Anreise<span class="time"> abends</span></h5>
-            <p>
-              Wahrscheinlich werden wir abends mit allen, die schon am Vorabend anreisen,
-              ein paar Getränke & Snacks zu uns nehmen. 🍸
-            </p>
-          </div> -->
-          <!-- 
-          <div class="wp5">
-            <h5>26. Juli<span class="time">irgendwann</span></h5>
-            <p>
-              An diesem Tag wird gefeiert. Details stehen noch nicht fest, aber stellt Euch
-              auf ein wunderbares Fest ein.
-            </p>
-          </div>
-          -->
-        <!-- </div>
-        <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-          <div class="wp4">
-            <p><strong>26. Juli (Samstag)</strong></p>
-            <h5>Fest <span class="time"> irgendwann</span></h5>
-            <p>
-              An diesem Tag wird gefeiert. Details stehen noch nicht fest, aber stellt Euch
-              auf ein wunderbares Fest ein. 🎉
-            </p>
-          </div> -->
-          <!-- 
-          <div class="wp6">
-            <h5>Wedding <span class="time">6PM-12AM</span></h5>
-            <p>
-              This is the main event in the entire wedding when the bride and the groom tie the knot.
-              The groom comes with the barat and is greeted by the bride side with some dhol of course
-              as maximum number of guests would be attending this event. This is when the couple circle the
-              sacred fire and are finally declared husband and wife.
-            </p>
-          </div>
-          -->
-        <!-- </div>
       </div>
       <div class="row section-padding">
         <div class="col-md-4 col-md-offset-4 text-center">
@@ -229,13 +219,11 @@
             <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
           </a>
         </div>
-      </div> -->
-      <!-- 
+      </div>
       <div class="row">
         <div class="col-xs-12 section-border section-padding">
         </div>
       </div>
-      -->
     </div>
   
     <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
@@ -256,6 +244,83 @@
       </div>
     </div>
   </section>
+
+<section id="video-bg" class="hidden-sm hidden-xs">
+    <div id="bgndVideo" class="player"
+        data-property="{videoURL:'https://youtu.be/kbi6m6OB8hQ',containment:'#video-bg',autoPlay:true,mute:true,loop:true,startAt:10,stopAt:33,showControls:false,opacity:1}">
+    </div>
+    <div id="video-content">
+        <h5>Wuppertal</h5>
+        <p>Hier feiern wir</p>
+    </div>
+</section>
+
+<section id="map" class="section-padding">
+    <div class="text-center">
+        <h3>Die Anreise</h3>
+        <p>Wuppertal - gut mit 🚂, 🚗 und ✈️ erreichbar</p>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="map-content-wrapper" class="container d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Zeige Informationen
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>Soulfood Cafe Simonz</h5>
+                            <p><a href="https://maps.app.goo.gl/xo2DHUfrAmW9accg6" target="_blank" rel="noopener">Google Maps öffnen</a></p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <a class="btn btn-accent btn-small" id="btn-show-map">
+                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Karte zeigen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="rsvp text-center" id="rsvp">
+
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Danke!</h3>
+                        <p>Toll dass du/ihr dabei bist/seid 🙂</p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div>/.modal-content
+        </div>/.modal-dialog
+    </div>
+
+<section id="sleeping">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Übernachtung</h3>
+                Für die Übernachtung empfehlen wir folgende Hotels in der Nähe der Location:
+                <ul class="list-unstyled event-list text-center">
+                    <li><strong>Premier Inn</strong> · ca. 20 Min. zu Fuß · <a href="https://www.premierinn.com/de/de/hotels/deutschland/nordrhein-westfalen/wuppertal/wuppertal-city-centre.html" target="_blank" rel="noopener">Website</a></li>
+                    <li><strong>Vienna House Easy by Wyndham</strong> · ca. 15 Min. zu Fuß · <a href="https://www.wyndhamhotels.com/de-de/vienna-house/wuppertal-germany/vienna-house-easy-wuppertal/overview" target="_blank" rel="noopener">Website</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section id="eng-pics" class="section-padding">
     <div class="container-fluid">
@@ -352,69 +417,7 @@
     </div>-->
 </section>
 
-<section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
-        data-property="{videoURL:'https://youtu.be/kbi6m6OB8hQ',containment:'#video-bg',autoPlay:true,mute:true,loop:true,startAt:10,stopAt:33,showControls:false,opacity:1}">
-    </div>
-    <div id="video-content">
-        <h5>Wuppertal</h5>
-        <p>Hier feiern wir</p>
-    </div>
-</section>
-
-<section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>Die Anreise</h3>
-        <p>Wuppertal - gut mit 🚂, 🚗 und ✈️ erreichbar</p>
-    </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container d-flex justify-content-center">
-        <div class="d-flex justify-content-center">
-            <div class="text-center">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Zeige Informationen
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5>Wuppertal</h5>
-                            <p>Nähere Details zur Location folgen in Kürze.</p>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <a class="btn btn-accent btn-small" id="btn-show-map">
-                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Karte zeigen
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="rsvp text-center" id="rsvp">
-
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>Danke!</h3>
-                        <p>Toll dass du/ihr dabei bist/seid 🙂</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div>/.modal-content
-        </div>/.modal-dialog
-    </div>
-
-    <div class="container">
+<!--     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>Worauf wartet Ihr noch?</h3>
@@ -465,7 +468,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 
 <footer>

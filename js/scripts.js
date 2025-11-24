@@ -197,7 +197,7 @@ $(document).ready(function () {
             end: new Date(Date.parse("2026-07-27T00:00:00+02:00")),
 
             // Event Address
-            address:"Wuppertal",
+            address:"Soulfood Cafe Simonz, Wuppertal",
 
             // Event Description
             description:"Wir freuen uns auf Euch :)"
@@ -240,7 +240,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 51.256214, lng: 7.150764};
+    var location = {lat: 51.2484139, lng: 7.1294507};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
@@ -254,7 +254,7 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 51.256214, lng: 7.150764};
+    var la_fiesta = {lat: 51.2484139, lng: 7.1294507};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
