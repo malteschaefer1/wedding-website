@@ -27,3 +27,20 @@
   width: auto;
   padding: 30px 32px;
 }
+
+/* Keep the map from overlapping the next section on small screens */
+@media screen and (max-width: 991px) {
+  #map-canvas {
+    height: 360px;
+  }
+
+  #map-content-wrapper {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  #map-content {
+    margin-top: 24px;
+    padding: 32px 24px;
+  }
+}
