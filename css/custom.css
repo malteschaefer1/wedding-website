@@ -1,0 +1,29 @@
+/* Alternating backgrounds */
+#invitation { background: #f8f9fd; }
+#intro { background: #fff; }
+#events { background: #f8f9fd; }
+#map { background: #fff; }
+#sleeping { background: #fff; }
+#eng-pics { background: #f8f9fd; }
+
+/* Custom tweaks for Das Fest spacing */
+#events h4 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+#events h4:first-of-type {
+  margin-top: 12px;
+}
+
+#events h5:not(:first-of-type) {
+  margin-top: 16px;
+}
+
+/* Map overlay transparency */
+#map-content {
+  background: rgba(255, 255, 255, 0.98);
+  display: inline-block;
+  width: auto;
+  padding: 30px 32px;
+}
