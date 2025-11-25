@@ -37,10 +37,9 @@
   position: absolute;
   /* center vertically over the map */
   top: 50%;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
-  transform: translateY(-50%);
   display: flex;
   justify-content: center;
   pointer-events: none;
@@ -48,7 +47,7 @@
 }
 
 #map-content-wrapper > .d-flex {
-  width: 100%;
+  width: auto;
   justify-content: center;
 }
 
@@ -56,6 +55,7 @@
   background: rgba(255, 255, 255, 0.98);
   display: inline-block;
   width: auto;
+  max-width: 620px;
   padding: 30px 32px;
   margin-top: 0;
 }
@@ -81,7 +81,7 @@
   }
 
   #map-content-wrapper {
-    top: 50%;
+    top: 55%;
     padding: 0 16px;
   }
 
