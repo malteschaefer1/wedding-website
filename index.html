@@ -278,8 +278,8 @@
                 <div id="map-content" class="pointer-events-auto">
                     <div class="row">
                         <div class="col-12">
-                            <h5>Soulfood Cafe Simonz</h5>
-                            <p><a href="https://maps.app.goo.gl/xo2DHUfrAmW9accg6" target="_blank" rel="noopener">Google Maps öffnen (neuer Tab)</a></p>
+                            <h5>Hochseilgarten Ingolstadt</h5>
+                            <p><a href="https://maps.app.goo.gl/UBtYEnXegtntALDP8" target="_blank" rel="noopener">Google Maps öffnen (neuer Tab)</a></p>
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -512,9 +512,10 @@
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAStml5H5cI5GxYeJFXx-Xu3lGf9gU0dGQ&callback=initMap&libraries=maps,marker&v=beta"></script>
 <script>
-    // Override map init to show only the Hochseilgarten marker
+    // Override map init to show Hochseilgarten + Biergarten markers
     async function initMap() {
         const hochseilgarten = {lat: 48.79973063389635, lng: 11.400626683939128}; // Hochseilgarten Ingolstadt
+        const biergarten = {lat: 48.76414296826891, lng: 11.415237618593816}; // Biergarten Schutterhof
         const mapId = 'DEMO_MAP_ID'; // Replace with your own Map ID if available
 
         const { Map } = await google.maps.importLibrary("maps");
@@ -527,12 +528,31 @@
             mapId: mapId
         });
 
-        createLabeledMarker({
-            map: map,
-            position: hochseilgarten,
-            title: 'Hochseilgarten Ingolstadt',
-            color: '#d64045'
+        const markers = [
+            {
+                position: hochseilgarten,
+                title: 'Hochseilgarten Ingolstadt',
+                color: '#d64045'
+            },
+            {
+                position: biergarten,
+                title: 'Biergarten Schutterhof',
+                color: '#7b3f98'
+            }
+        ];
+
+        const bounds = new google.maps.LatLngBounds();
+        markers.forEach(function(marker) {
+            createLabeledMarker({
+                map: map,
+                position: marker.position,
+                title: marker.title,
+                color: marker.color
+            });
+            bounds.extend(marker.position);
         });
+
+        map.fitBounds(bounds);
 
         function createLabeledMarker(options) {
             const pin = new PinElement({
