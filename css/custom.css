@@ -6,6 +6,11 @@
 #sleeping { background: #fff; }
 #eng-pics { background: #f8f9fd; }
 
+/* Simple text strike style */
+.strike {
+  text-decoration: line-through;
+}
+
 /* Custom tweaks for Das Fest spacing */
 #events h4 {
   margin-top: 28px;

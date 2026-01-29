@@ -157,7 +157,9 @@
                     Um keine Langeweile einkehren zu lassen, planten sie zum Herbst 2024 den Umzug ins Tal der Wupper.
                     Dort hatte Malte einen Job angenommen, um an der hiesigen Bildungsanstalt an der Schaffung und Weitergabe von Wissen zu arbeiten.<br><br>
 
-                    Dorthin, wo Barmen und Elberfeld fast einmal in ein gemeinsames "Groß-Wupp" zusammengelegt worden wäre, laden wir Euch im Sommer 2026 zu unserem Fest der Liebe ein: nach Wuppertal.
+                    <span class="strike">Dorthin, wo Barmen und Elberfeld fast einmal in ein gemeinsames "Groß-Wupp" zusammengelegt worden wäre, laden wir Euch im Sommer 2026 zu unserem Fest der Liebe ein: nach Wuppertal.</span>
+
+                    Und jetzt feiern wir mit Euch in Ingolstadt!
                 </p>
             </div>
             <div class="col-md-3 hidden-sm hidden-xs"><img src="img/malte.png" class="wp2"></div>
@@ -181,8 +183,8 @@
           <h4>Ablauf</h4>
           <h5>31. Juli – Ankommen & Warm-up</h5>
           <ul class="list-unstyled event-list text-center">
-            <li><strong>ca. 20h</strong> · Get-together</li>
-            <li><i>(Location wird noch bekannt gegeben)</i></li>
+            <li><strong>ab 19h</strong> · Get-together</li>
+            <li><i>Location: Biergarten Schutterhof (Friedhofstraße 1a, 85049 Ingolstadt)</i></li>
           </ul>
 
           <h5>1. August – Der große Tag</h5>
@@ -191,7 +193,8 @@
             <li><strong>15:30h</strong> · Kaffee & Kuchen</li>
             <li><strong>18h</strong> · Abendessen</li>
             <li><strong>ab 20h</strong> · Party 🎉</li>
-            <li><i>Location: <a href="#map">Café Simonz, Wuppertal</a> (siehe unten)</i></li>
+            <li><i>Ende: gegen 1h</i></li>
+            <li><i>Location: <a href="#map">Location: Hochseilgarten Ingolstadt</a> (siehe unten)</i></li>
           </ul>
 
       <div class="row section-padding">
@@ -210,12 +213,13 @@
 
           <h4>Kinder</h4>
           Für alle, die mit Kindern anreisen:<br>
-          Es wird vor Ort eine extra Küche geben, die zur Zubereitung von Speisen, zum Milch erwärmen etc. genutzt werden kann.
-          Weiterhin gibt es einen Innenhof mit Spielplatz und viel Platz zum Toben.
+          Es wird vor Ort viel Platz zum Toben geben.<br>
+          Aber: es gibt auch einen kleinen See - also aufgepasst für alle (Noch-)Nichtschwimmer*innen.<br>
 
           <h4>Parken</h4>
-          Es gibt eine sehr begrenzte Anzahl an Parkplätzen direkt an der Location.<br>
-          Wir empfehlen daher am Hotel zu parken und zu Fuß zu kommen.
+          Es gibt einen Schotterparkplatz direkt an der Location.<br>
+          Ihr könnt aber auch gut mit dem Bus der Linie 15 anreisen (Haltestelle "Kleingartenanlage").<br>
+          Busse fahren jede Stunde bis 3h.
 
         </div>
       </div>
@@ -238,6 +242,8 @@
               Zieht euch so an, wie Ihr Euch wohl fühlt - sommerlich, locker oder festlich. 💃🏻🕺🏾<br>
               Wer will und hat, darf auch gerne das eigene Hochtzeitsoutfit "recyclen". 👰🏽‍♂️🤵🏼‍♀️<br>
               Alle Farben sind erlaubt! 🌈
+              Achtung: Der Untergrund auf dem Gelände ist Schotter und Wiese -<br>
+              bei der Auswahl der Schuhe also gerne berücksichtigen.
             </p>
           </div>
         </div>
@@ -247,10 +253,10 @@
 
 <section id="video-bg">
     <div id="bgndVideo" class="player"
-        data-property="{videoURL:'https://youtu.be/kbi6m6OB8hQ',containment:'#video-bg',autoPlay:true,mute:true,loop:true,startAt:10,stopAt:33,showControls:false,opacity:1}">
+        data-property="{videoURL:'https://www.youtube.com/watch?v=HYFwb78vt-E',containment:'#video-bg',autoPlay:true,mute:true,loop:true,startAt:16,stopAt:23,showControls:false,opacity:1}">
     </div>
     <div id="video-content">
-        <h5>Wuppertal</h5>
+        <h5>Ingolstadt</h5>
         <p>Hier feiern wir</p>
     </div>
 </section>
@@ -258,7 +264,7 @@
 <section id="map" class="section-padding">
     <div class="text-center">
         <h3>Location / Anreise</h3>
-        <p><a href="https://www.cafe-simonz.de" target="_blank" rel="noopener">Soulfood Café Simonz</a> · Simonsstr. 36, 42117 Wuppertal-Arrenberg</p>
+        <p><a href="https://maps.app.goo.gl/GGE5UmgdJ4pZm8n18" target="_blank" rel="noopener">Hochseilgarten Ingolstatd</a> · (GPS: 48.7996, 11.4006)</p>
     </div>
     <div id="map-canvas"></div>
      <div id="map-content-wrapper" class="container d-flex justify-content-center">
@@ -289,6 +295,7 @@
     </div>
 </section>
 
+<!--
 <section id="sleeping" class="section-padding">
     <div class="container-fluid">
         <div class="row">
@@ -303,6 +310,7 @@
         </div>
     </div>
 </section>
+-->
 
 <section id="eng-pics" class="section-padding">
     <div class="container-fluid">
@@ -504,13 +512,9 @@
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAStml5H5cI5GxYeJFXx-Xu3lGf9gU0dGQ&callback=initMap&libraries=maps,marker&v=beta"></script>
 <script>
-    // Override map init to add hotel pins while keeping Soulfood as center
+    // Override map init to show only the Hochseilgarten marker
     async function initMap() {
-        const soulfood = {lat: 51.2484139, lng: 7.1294507}; // Soulfood Café Simonz
-        const hotels = [
-            {position: {lat: 51.2573719, lng: 7.1421207}, title: 'Premier Inn'},
-            {position: {lat: 51.2535096, lng: 7.1416417}, title: 'Vienna House Easy'}
-        ];
+        const hochseilgarten = {lat: 48.79973063389635, lng: 11.400626683939128}; // Hochseilgarten Ingolstadt
         const mapId = 'DEMO_MAP_ID'; // Replace with your own Map ID if available
 
         const { Map } = await google.maps.importLibrary("maps");
@@ -518,25 +522,16 @@
 
         const map = new Map(document.getElementById('map-canvas'), {
             zoom: 14,
-            center: soulfood,
+            center: hochseilgarten,
             scrollwheel: false,
             mapId: mapId
         });
 
         createLabeledMarker({
             map: map,
-            position: soulfood,
-            title: 'Soulfood Café Simonz',
+            position: hochseilgarten,
+            title: 'Hochseilgarten Ingolstadt',
             color: '#d64045'
-        });
-
-        hotels.forEach(function(marker) {
-            createLabeledMarker({
-                map: map,
-                position: marker.position,
-                title: marker.title,
-                color: '#7b3f98'
-            });
         });
 
         function createLabeledMarker(options) {
